@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Syreke Design</title>
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}" type="image/x-icon">
+    <link rel="icon" th:href="@{/favicon.ico}" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+
+
+</head>
+
+
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SYREKE<i class="fas fa-chess-queen">DESIGN</i> </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Басты бет</a> </li>
+                <li><a href="#aboutUs">Біз туралы</a> </li>
+                <li><a href="#service">Қызмет</a> </li>
+                <li><a href="#lg">Байланыс</a></li>
+                <li><a href="#dg">Жобалар</a></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--
+<div id="carousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+    <li class="active" data-target="#carousel" data-slide-to="0"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{% static 'img/slide1.jpg' %}" alt="">
+            <div class="carousel-caption">
+                <h2>Ең сапалы дизайн!</h2>
+                    <h2>Қазақстандағы ең үздік дизайн қызметі</h2>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'img/slide2.jpg' %}" alt="">
+            <div class="carousel-caption">
+                <h2>Ең сапалы дизайн!</h2>
+                    <h2>Қазақстандағы ең үздік дизайн қызметі</h2>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'img/slide3.jpg' %}" alt="">
+            <div class="carousel-caption">
+                <h2>Ең сапалы дизайн!</h2>
+                    <h2>Қазақстандағы ең үздік дизайн қызметі</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+-->
+<div id="headerwrap">
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1>Ең сапалы дизайн!</h1>
+                <h2>Қазақстандағы ең үздік дизайн қызметі</h2>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div id="service" class="container w ">
+    <div class="row text-center">
+        <br><br>
+        <div class="col-lg-12">
+            <h1>Қызметтер</h1><br><br>
+            <div class="ss" style="border-style: solid;"></div><br><br>
+        </div>
+        <div class="col-lg-4">
+            <h4>Дизайн</h4><br>
+            <img th:src="@{/img/d01.jpg}"><br><br>
+            <p>Дизайн ойлап табу! Логотип және т.б</p>
+        </div>
+        <div class="col-lg-4">
+            <h4>Беттеу</h4><br>
+            <img th:src="@{/img/v01.jpg}" height="210"><br><br>
+            <p>Кітап, газет, журналдарды беттеу</p>
+        </div>
+        <div class="col-lg-4">
+            <h4>Дайындау</h4><br>
+            <img th:src="@{img/d02.jpg}" height="210"><br><br>
+            <p>Баннер, визитка, күнтізбе, флаер, буклет,
+                этикетка, шақыру билеттері және т.б</p>
+        </div>
+
+
+    </div>
+
+</div>
+<br><br>
+<div id="dg">
+    <div class="container">
+        <div class="row text-center">
+            <h4>Біздің жобалар</h4><br>
+            <div class="col-lg-4">
+                <div class="tilt">
+                    <a href="#"><img th:src="@{/img/emultion.jpg}" alt="p01"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="tilt">
+                    <a href="#"><img th:src="@{/img/alatau.png}" alt="p02"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="tilt">
+                    <a href="#"><img th:src="@{/img/everest.png}" alt="p03"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container wb" id="aboutUs">
+    <div class="row text-center">
+        <br><br>
+        <div class="col-lg-3">
+            <h1>Біз туралы!</h1><br>
+            <p style="font-size: 20px">Syreke Design типографиясы 10 жылдан астам полиграфиялық қызметтер нарығында жұмыс
+                істеп келеді. Алматы қаласындағы ең үздік типографиялардың бірі.
+                Біз үшін ең маңыздызы - адамдардың жүрегінен орын табу.
+                Біздің типографияда тәжірибесі мол, өз ісінің шебер мамандары
+                қызмет жасайды. Біздің сфера бүкіл Қазақтанда даму үстінде!</p>
+            <p><br><br></p>
+        </div>
+        <div class="col-lg-9">
+            <img th:src="@{/img/work.jpg}" style="max-width: 100%" alt="work" class="img-responsive">
+        </div>
+
+    </div>
+</div>
+
+<div id="lg">
+    <div class="container">
+        <div class="row text-center">
+            <h1>Тапсырыс беру үшін төмендегі форманы толтырыңыз!</h1><br>
+            <form action="#" th:action="@{/add}" th:object="${client} "method="post" class="form-inline text-center">
+                <hidden th:path="id"/>
+                <div class="form-group">
+                    <label for="name">Аты-жөні: </label>
+                    <input type="text" id="name" name="name"   class="form-control"/>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email"  class="form-control"/><br><br>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Тапсырыс беру</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--th:field="*{name}"
+th:field = "*{email}"-->
+<div id="r">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h4>Тұтынушы пікірлері</h4>
+                <p>
+                    "Осы жерде кітап жасатқанмын. Айтылған уақытында және маған жеңілдік жасады. Айтарға сөзім жоқ! Жарайсыңдар!"
+                </p>
+                <i class="fas fa-quote-left"></i>
+                <h5>&nbsp;Арман</h5>
+                <h6>Алматы қ.</h6>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="f">
+    <div class="container">
+        <div class="row text-center">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook"></i> </a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter"></i> </a>
+            <a href="http://www.vk.com"><i class="fab fa-vk"></i> </a>
+            <p>Алматы қаласы. 2018 жыл</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
